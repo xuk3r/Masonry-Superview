@@ -11,9 +11,11 @@ masonry+superview
 
 ## 注意：equalToSuperview(); block必须携带"()"!!!!!!
 
+
+
 # code
 
-
+```
 //Masonry相对于父视图的约束
 @interface MASConstraint (SuperView)
 
@@ -30,4 +32,4 @@ masonry+superview
 - (MASConstraint *(^)(void))lessThanOrEqualToSuperview;
 
 @end
-
+```
