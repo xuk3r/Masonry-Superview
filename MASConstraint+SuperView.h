@@ -1,9 +1,9 @@
 //
 //  MASConstraint+SuperView.h
-//  longbridge-ios-app
+//  
 //
 //  Created by xuker on 2019/4/2.
-//  Copyright © 2019 5th. All rights reserved.
+//  Copyright © 2019 xuker. All rights reserved.
 //
 
 #import <Masonry/Masonry.h>
