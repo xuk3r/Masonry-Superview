@@ -1,6 +1,14 @@
-# masonry-superview
+# masonry-superview !
 masonry+superview
 
+# usage
+`
+pod 'masonry+superview'
+`
+or
+`
+pod 'Masonry+ToSuperView'
+`
 
 # example:
 `
@@ -33,3 +41,7 @@ masonry+superview
 
 @end
 ```
+
+## 备注
+Pod不支持修改大小写。。。masonry+superview无法改成 Masonry+Superview
+可以使用masonry+superview或者Masonry+ToSuperView
