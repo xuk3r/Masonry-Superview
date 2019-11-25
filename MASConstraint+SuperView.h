@@ -36,4 +36,20 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@interface MASConstraint (OtherView)
+
+///相对于目标视图的top
+- (MASConstraint * (^)(id))equalToTop;
+
+///相对于目标视图的bottom
+- (MASConstraint * (^)(id))equalToBottom;
+
+///相对于目标视图的leading
+- (MASConstraint * (^)(id))equalToLeading;
+
+///相对于目标视图的trailing
+- (MASConstraint * (^)(id))equalToTrailing;
+
+@end
+
 NS_ASSUME_NONNULL_END

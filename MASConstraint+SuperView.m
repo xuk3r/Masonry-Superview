@@ -78,3 +78,63 @@
 }
 
 @end
+
+
+@implementation MASConstraint (OtherView)
+
+///相对于目标视图的top
+- (MASConstraint * (^)(id))equalToTop{
+    return ^id(id attribute) {
+        if ([attribute isKindOfClass:[UIView class]]) {
+            UIView *view = attribute;
+            return self.equalToWithRelation(view.mas_top, NSLayoutRelationEqual);
+        }else{
+            return self.equalToWithRelation(attribute, NSLayoutRelationEqual);
+        }
+    };
+}
+
+///相对于目标视图的bottom
+- (MASConstraint * (^)(id))equalToBottom{
+    return ^id(id attribute) {
+        if ([attribute isKindOfClass:[UIView class]]) {
+            UIView *view = attribute;
+            return self.equalToWithRelation(view.mas_bottom, NSLayoutRelationEqual);
+        }else{
+            return self.equalToWithRelation(attribute, NSLayoutRelationEqual);
+        }
+    };
+}
+
+///相对于目标视图的leading
+- (MASConstraint * (^)(id))equalToLeading{
+    return ^id(id attribute) {
+        if ([attribute isKindOfClass:[UIView class]]) {
+            UIView *view = attribute;
+            return self.equalToWithRelation(view.mas_leading, NSLayoutRelationEqual);
+        }else{
+            return self.equalToWithRelation(attribute, NSLayoutRelationEqual);
+        }
+    };
+}
+
+///相对于目标视图的trailing
+- (MASConstraint * (^)(id))equalToTrailing{
+    return ^id(id attribute) {
+        if ([attribute isKindOfClass:[UIView class]]) {
+            UIView *view = attribute;
+            return self.equalToWithRelation(view.mas_trailing, NSLayoutRelationEqual);
+        }else{
+            return self.equalToWithRelation(attribute, NSLayoutRelationEqual);
+        }
+    };
+}
+
+
+//- (MASConstraint * (^)(id))equalTo {
+//    return ^id(id attribute) {
+//        return self.equalToWithRelation(attribute, NSLayoutRelationEqual);
+//    };
+//}
+
+@end
