@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "masonry+superview"
-s.version      = "0.1.1"
+s.version      = "0.2.0"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
 s.summary      = "masonry+superview"
 s.homepage     = "https://github.com/xuk3r/masonry-superview"
